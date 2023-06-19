@@ -1,10 +1,283 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Résumé</title>
-  </head>
-  <body>
-    ― Hello World! &#x1F609;
-  </body>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="resume">
+            <div class="container">
+                <div class="resume__block">
+                    <h1 class="contact-info__header">Tetiana Poleliuk</h1>
+                    <h3 class="contact-info__sub-header">Junior Front-End Developer</h3>
+
+                    <div class="contact_info_container fh">
+                        <div class="contact-info__block">
+                            <a href="mailto:poleluk@ukr.net" target="_blank" class="contact-info__item" rel="author">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 512 512"
+                                        id="mail">
+                                        <path
+                                            d="M445.011,82.7H67.022a50.057,50.057,0,0,0-50,50V379.3a50.057,50.057,0,0,0,50,50H445.01a50.057,50.057,0,0,0,50-50V132.7A50.055,50.055,0,0,0,445.011,82.7Zm-88.9,173.232,118.9-93.318V371.352ZM67.022,102.7H445.01a30.034,30.034,0,0,1,30,30v4.49L282.6,288.208a39.972,39.972,0,0,1-49.246-.04L37.022,137.152V132.7A30.034,30.034,0,0,1,67.022,102.7Zm92.438,153.86L37.022,371.755V162.384ZM445.011,409.3H67.022a30.007,30.007,0,0,1-25.538-14.28l134.034-126.1L221.1,303.98a59.937,59.937,0,0,0,73.816-.019L340.235,268.4,470.6,394.94A30.011,30.011,0,0,1,445.011,409.3Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span>poleluk@ukr.net</span>
+                            </a>
+                            <a href="tel:+380688729735" target="_blank" class="contact-info__item" rel="author">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="phone">
+                                        <path
+                                            d="M27.308,20.649l-2.2-2.2a3.521,3.521,0,0,0-4.938-.021,2.152,2.152,0,0,1-2.729.267A15.026,15.026,0,0,1,13.3,14.562a2.181,2.181,0,0,1,.284-2.739A3.521,3.521,0,0,0,13.553,6.9l-2.2-2.2a3.514,3.514,0,0,0-4.961,0l-.633.634c-3.3,3.3-3.053,10.238,3.813,17.1,4.14,4.141,8.307,5.875,11.686,5.875a7.5,7.5,0,0,0,5.418-2.061l.634-.634A3.513,3.513,0,0,0,27.308,20.649ZM25.894,24.2l-.634.634c-2.6,2.6-8.339,2.125-14.276-3.813S4.571,9.34,7.171,6.74L7.8,6.107a1.511,1.511,0,0,1,2.133,0l2.2,2.2a1.511,1.511,0,0,1,.021,2.11,4.181,4.181,0,0,0-.531,5.239,17.01,17.01,0,0,0,4.713,4.706,4.179,4.179,0,0,0,5.231-.517,1.512,1.512,0,0,1,2.118.013l2.2,2.2A1.51,1.51,0,0,1,25.894,24.2Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span>+38-(068)-872-97-35</span>
+                            </a>
+                            <a href="https://github.com/TPoleliuk" target="_blank" rel="author"
+                                class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                        <path
+                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                    </svg>
+                                </div>
+                                <span>Github repositories</span>
+                            </a>
+                        </div>
+
+                        <div class="contact-info__block contact-info__block--center">
+                            <img class="contact-info__avatar" src="assets/avatar.jpg" alt="Avatar">
+                        </div>
+
+                        <div class="contact-info__block">
+                            <a href="https://www.linkedin.com/in/tetiana-poleliuk-1b52771b8/" rel="author"
+                                class="contact-info__item" target="_blank">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 448 512">
+                                        <path
+                                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span>Linkedin account</span>
+                            </a>
+                            <a href="https://www.facebook.com/tatyana.poleluk" rel="author" class="contact-info__item"
+                                target="_blank">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path
+                                            d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                                    </svg>
+                                </div>
+                                <span>Facebook account</span>
+                            </a>
+                            <a href="https://www.instagram.com/tetiana_poleliuk/" rel="author"
+                                class="contact-info__item" target="_blank">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                    </svg>
+                                </div>
+                                <span>Instagram account</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="resume__block">
+                    <div class="intro">
+                        <div class="intro__icon-wrapper">
+                            <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="intro_text">Hello, BinaryStudio! Now I am an underwiter of transport risks. But,
+                            frankly speaking, it's not my dream job. I really admire front-end development and do
+                            everything what I can to master the profession of this. So, kitties, juct help me in it
+                            &#128571;!<br>I
+                            promise it'll be your best investment &#128527;.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="resume__block">
+                    <div class="skills">
+                        <h3 class="skills__header">Skills</h3>
+                        <p class="skills__text">Sleep, eat, more sleep, meow, mrrr, purr...<br>Yea, it's not a
+                            mistake. In this part I'm very similar to your Bulka &#128568;. Show me who not
+                            &#128527;.<br>But seriously, my technical skills includes:</p>
+                        <div class="skills__list skills__text">
+                            <div>
+                                <p>HTML/CSS/Java Script (basic)</p>
+                                <p>Design tool «Figma»</p>
+                            </div>
+                            <div>
+                                <p>VCS «Github»</p>
+                                <p>PMS «Worksection»</p>
+                            </div>
+                            <div>
+                                <p>MO (Word, Excel, PP)</p>
+                                <p>1C:Accounting 8</p>
+                            </div>
+                        </div><br>
+                        <p class="skills__text">&#9757; I'm confident, this list will be much longer with you any way!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="resume__block">
+                    <div class="main-info fh">
+
+                        <div class="experiences">
+                            <h3 class="experiences__header">Experience</h3>
+                            <div class="experiences__company">
+                                <div class="experiences__company-header">
+                                    <span class="experiences__company-header-durability">July 2021 &mdash;
+                                        present</span>
+                                    <h3 class="experiences__company-header-name">INGO</h3>
+                                </div>
+                                <div class="experiences__company-project">
+                                    <span class="experiences__company-project-role">Senior specialist</span>
+                                    <h3 class="experiences__company-project-name">Motor underwriter</h3>
+                                    <ul class="experiences__company-project-responsibilities">
+                                        <li>Writing the technical tasks for the introduction of new insurance products
+                                            and improvement of existing ones into the Company's front-end system;
+                                            testing, detection of bugs.</li>
+                                        <li>Quotation of conditions of motor insurance.</li>
+                                        <li>Analysis of CASCO and MTPL portfolios' KPI, providing suggestions on ways to
+                                            optimize them.</li>
+                                        <li>Development and modification of insurance contracts, insurance products,
+                                            methodological documents.</li>
+                                        <li>Consultation of the Company's sales managers on transport insurance issues.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="experiences__company-header">
+                                    <span class="experiences__company-header-durability">May 2019 &mdash; June
+                                        2021</span>
+                                    <h3 class="experiences__company-header-name">ALFA INSURANCE</h3>
+                                </div>
+                                <div class="experiences__company-project">
+                                    <span class="experiences__company-project-role">Specialist</span>
+                                    <h3 class="experiences__company-project-name">Motor underwriter</h3>
+                                    <ul class="experiences__company-project-responsibilities">
+                                        <li>Writing the technical tasks for the introduction of new insurance products
+                                            and improvement of existing ones into the Company's front-end system;
+                                            testing, detection of bugs.</li>
+                                        <li>Control of the correctness of data import from the Company's front-end
+                                            system and partners' softwares into the database 1C:Accounting 8.</li>
+                                        <li>Quotation of conditions of motor insurance.</li>
+                                        <li>Consultation of the Company's sales managers on transport insurance issues.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="experiences__company-header">
+                                    <span class="experiences__company-header-durability">May 2018 &mdash; February
+                                        2019</span>
+                                    <h3 class="experiences__company-header-name">UTR</h3>
+                                </div>
+                                <div class="experiences__company-project">
+                                    <span class="experiences__company-project-role">Specialist</span>
+                                    <h3 class="experiences__company-project-name">Insurance manager</h3>
+                                    <ul class="experiences__company-project-responsibilities">
+                                        <li>Writing the technical tasks for the creating an official web-site of
+                                            Company.</li>
+                                        <li>Support and prolongation the clients' insurance contracts.</li>
+                                        <li>Attraction of new clients, negotiation of insurance conditions with
+                                            insurers.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="additional-info fv">
+                        <div class="additional-info fv">
+                            <div class="additional-info__education">
+                                <h3 class="additional-info__education-header">Education</h3>
+                                <div class="additional-info__education-university-wrapper fv">
+                                    <div class="additional-info__education-university">
+                                        <span class="additional-info__education-university-durability">2017-2019
+                                            (Master's
+                                            Degree)</span>
+                                        <h3 class="additional-info__education-university-speciality">Insurance
+                                            management
+                                        </h3>
+                                        <p class="additional-info__education-university-name">KNEU named Vadym Hetman
+                                        </p>
+                                    </div>
+                                    <div class="additional-info__education-university">
+                                        <span class="additional-info__education-university-durability">2013-2017
+                                            (Bachelor's
+                                            Degree)</span>
+                                        <h3 class="additional-info__education-university-speciality">Finance
+                                        </h3>
+                                        <p class="additional-info__education-university-name">KNEU named Vadym Hetman
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="additional-info__languages">
+                                <h3 class="additional-info__languages-header">Languages</h3>
+                                <p class="additional-info__languages-item">
+                                    Ukrainian (native &#128153;&#128155;)
+                                </p>
+                                <p class="additional-info__languages-item">
+                                    Russian (unfortunately know, hope temporarily &#128530;)
+                                </p>
+                                <p class="additional-info__languages-item">
+                                    English (intermediate)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="resume__block">
+                    <div class="interests">
+                        <h3 class="interests__header">Interests</h3>
+                        <div class="interests__card-wrap">
+                            <div class="interests__card fv">
+                                <h3>General Staff infographics</h3>
+                                <img src="./assets/interests/infographics.jpg" alt="infographics">
+                            </div>
+                            <div class="interests__card fv">
+                                <h3>Donation to the AF of UA</h3>
+                                <img src="./assets/interests/donation.jpg" alt="donation">
+                            </div>
+                            <div class="interests__card fv">
+                                <h3>Cotton at the russia</h3>
+                                <img src="./assets/interests/bavovna.jpg" alt="bavovna">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
 </html>
